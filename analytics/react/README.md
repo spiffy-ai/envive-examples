@@ -60,10 +60,10 @@ const {envive} = useEnviveAnalytics();
         onClick={() => {
           if (selectedVariant) {
             envive.trackAddToCartClicked({
-                id: selectedVariant?.id,
+                id: selectedVariant.id,
                 quantity: 1,
                 price: Number(selectedVariant.price.amount),
-                currencyCode: selectedVariant?.price.currencyCode,
+                currencyCode: selectedVariant.price.currencyCode,
             });
           }
 
